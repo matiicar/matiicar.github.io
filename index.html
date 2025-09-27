@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Martina Ailin Carbone – Mis 15</title>
+  <meta name="description" content="Invitación a los 15 de Martina Ailin Carbone – 20/11/2025 – Salón de la Paloma" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- DECOR -->
+  <div class="bg-gradient"></div>
+  <div class="sparkles" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero container">
+      <div class="hero__text">
+        <p class="overtitle">Celebramos los 15 de</p>
+        <h1 class="glow">Martina <span class="accent">Ailin</span> Carbone</h1>
+        <p class="lead">
+          <span id="eventDateLong">Jueves 20 de noviembre de 2025</span> ·
+          <span id="eventTime">20:00</span> hs ·
+          <span id="eventLocation">Salón de la Paloma</span>
+        </p>
+        <div class="cta">
+          <button id="btnRSVP" class="btn btn-primary">Confirmar asistencia</button>
+          <button id="btnICS" class="btn btn-light">Agregar al calendario</button>
+          <button id="btnMaps" class="btn btn-light">Ver mapa</button>
+        </div>
+      </div>
+
+      <aside class="countdown card">
+        <h2>Cuenta regresiva</h2>
+        <div class="timer">
+          <div class="timebox"><span id="d">0</span><small>Días</small></div>
+          <div class="timebox"><span id="h">0</span><small>Horas</small></div>
+          <div class="timebox"><span id="m">0</span><small>Min</small></div>
+          <div class="timebox"><span id="s">0</span><small>Seg</small></div>
+        </div>
+        <p class="muted">¡No faltes! Te esperamos para celebrar juntos.</p>
+      </aside>
+    </section>
+
+    <!-- DETALLES -->
+    <section class="details container">
+      <div class="card fade-up">
+        <h3>Dress code</h3>
+        <p>Elegante. <br>Tonos claros o neutros</p>
+      </div>
+      <div class="card fade-up">
+        <h3>Horario</h3>
+        <p>Ingreso a las <span id="eventTime2">21:30</span> <br> Te esperamos! </p>
+      </div>
+      <div class="card fade-up">
+        <h3>Regalos</h3>
+        <p>El alias de la quinceanera: <br> Martina.carb </p>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="gallery container">
+      <header class="gallery__head">
+        <h2>Salon "La Paloma"
+        </h2>
+        <p class="muted">Un adelanto de la noche 💫</p>
+      </header>
+      <div id="galleryGrid" class="gallery__grid">
+        <!-- Render por JS -->
+      </div>
+    </section>
+  </main>
+
+
+  <!-- MAPA DE GOOGLE MAPS -->
+
+  <section class="map card" id="mapa-salon">
+    <div class="map__head">
+      <h3>¿Cómo llegar?</h3>
+    </div>
+  
+    <div class="map__frame">
+      <!-- Embed nativo de Google Maps a la ubicación -->
+      <iframe
+        title="Mapa - La Paloma Ranelagh"
+        src="https://www.google.com/maps?q=La%20Paloma%20Ranelagh&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+    </div>
+  
+    <p class="map__hint">La Paloma – Ranelagh.</p>
+  </section>
+  
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> – Familia Carbone.</p>
+      <div class="links">
+        <button id="btnRSVP2" class="link">Confirmar asistencia</button>
+        <span class="dot">•</span>
+        <button id="btnSupport2" class="link">Soporte por WhatsApp</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FAB WhatsApp -->
+  <button id="fabWhats" class="fab" title="Soporte WhatsApp" aria-label="Soporte WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+      <path fill="currentColor" d="M.06 24L1.8 17.84A11.9 11.9 0 01.18 11.84C.12 5.3 5.4 0 12.06 0A11.9 11.9 0 0120.47 3.5 11.8 11.8 0 0123.95 11.9c0 6.66-5.28 11.95-11.94 11.95-2.1 0-4.05-.55-5.99-1.62L.06 24z"/>
+      <path fill="currentColor" d="M16.6 14.6c-.25-.13-1.47-.73-1.7-.82-.23-.08-.4-.12-.57.13-.17.24-.65.82-.8.98-.15.17-.3.19-.55.06-.25-.13-1.05-.39-2-1.25-.74-.66-1.24-1.48-1.38-1.73-.14-.25-.01-.38.12-.5.12-.12.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.37-.78-1.88-.2-.48-.41-.42-.57-.43-.15-.01-.32-.01-.49-.01-.17 0-.45.06-.69.32-.24.26-.91.89-.91 2.17 0 1.28.93 2.52 1.06 2.69.13.17 1.83 2.8 4.44 3.93.62.27 1.1.43 1.47.55.62.2 1.19.17 1.64.1.5-.08 1.47-.6 1.68-1.19.21-.59.21-1.1.15-1.2-.06-.1-.23-.16-.48-.29z"/>
+    </svg>
+  </button>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast" role="status" aria-live="polite">¡Gracias! Recibimos tu confirmación.</div>
+
+  <!-- MODAL RSVP -->
+  <div id="modalRSVP" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__dialog" role="document">
+      <div class="modal__header">
+        <h3>Confirmar asistencia</h3>
+        <button id="closeModal" class="icon" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="modal__body">
+        <label class="field">
+          <span>Nombre y apellido</span>
+          <input id="fName" type="text" placeholder="Tu nombre" required />
+        </label>
+        <label class="field">
+          <span>¿Asistís?</span>
+          <select id="fAttendance">
+            <option value="asistire">Sí, asistiré</option>
+            <option value="noasisto">No podré asistir</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Acompañantes</span>
+          <input id="fGuests" type="number" min="0" max="10" step="1" value="1" />
+        </label>
+        <label class="field">
+          <span>Detalles:</span>
+          <textarea id="fNotes" rows="3" placeholder="Opcional"></textarea>
+        </label>
+      </div>
+      <div class="modal__footer">
+        <button id="sendRSVP" class="btn btn-primary">Enviar por WhatsApp</button>
+        <button id="cancelRSVP" class="btn btn-ghost">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX GALERÍA -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lbClose" aria-label="Cerrar">✕</button>
+    <button class="lightbox__nav prev" id="lbPrev" aria-label="Anterior">‹</button>
+    <img id="lbImg" alt="Foto de la galería" />
+    <button class="lightbox__nav next" id="lbNext" aria-label="Siguiente">›</button>
+    <div id="lbCounter" class="lightbox__counter">1 / 1</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
