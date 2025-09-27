@@ -4,12 +4,12 @@
 const EVENT_TITLE    = "Mis 15 – Martina Ailin Carbone";
 const EVENT_DATE     = "2025-11-20";     // AAAA-MM-DD
 const EVENT_TIME     = "20:00";          // HH:mm
-const EVENT_LOCATION = "Salón de la Paloma";
-const MAPS_QUERY     = "Salón de la Paloma";
-const PHONE_NUMBER   = "54911XXXXYYYY";  // REEMPLAZAR (sin + ni espacios)
+const EVENT_LOCATION = "La Paloma Ranelagh";
+const MAPS_QUERY     = "La Paloma Ranelagh";
+const PHONE_NUMBER   = "5491138275112";  // REEMPLAZAR (sin + ni espacios)
 
 // Galería: ubicá tus fotos reales en /img y listalas acá
-const GALLERY = ["img/01.jpg","img/02.jpg","img/03.jpg","img/04.jpg","img/05.jpg","img/06.jpg"];
+const GALLERY = ["1.png","2.png","3.png","4.png","5.png","6.png"];
 
 // =====================
 // HELPERS
